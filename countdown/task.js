@@ -1,4 +1,8 @@
-let count = document.getElementById('timer');
+const count = document.getElementById('timer');
+//Переменные, которые в дальнейшем не будут переопределены,
+//лучше объявлять через const, так вы даете понять, что это константы. 
+//Это будет более семантически верным и поможет избежать ошибок на этапе разработки.(от преподавателя)
+
 //(+count.textContent / 3600) + ':' + (+count.textContent / 60) + ':' + +count.textContent
 let count_textContent = +count.textContent;
 
