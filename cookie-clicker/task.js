@@ -11,7 +11,24 @@ cookie.onclick = () => {
   } else {
     cookie.width = 200;
   }
+ 
+  //от преподавателя:
+/* const image = document.getElementById("cookie");
+const counterElement = document.getElementById("clicker__counter");
+const clickSpeed = document.getElementById("speed__counter");
+let lastCountTime = new Date();
 
+image.onclick = () => {
+  const countTime = new Date();
+  image.width = ++counterElement.textContent % 2 ? 250 : 200;
+  clickSpeed.textContent = (
+    1000 /
+    (countTime.getTime() - lastCountTime)
+  ).toFixed(2);
+  lastCountTime = countTime;
+};
+*/
+  
   //Добавьте параметр «Скорость клика». Он должен показывать среднее количество кликов в секунду. 
   //Значение обновляется при каждом новом клике.Например, с момента последнего клика прошло 0.5 секунды. 
   //Тогда скорость клика = 1/0.5 = 2 клика в секунду
